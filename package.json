@@ -1,0 +1,27 @@
+{
+  "name": "devcamp-nodejs",
+  "version": "1.0.0",
+  "description": "DevCamper backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandyapurvi/Devcamp-nodejs.git"
+  },
+  "author": "Purvi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandyapurvi/Devcamp-nodejs/issues"
+  },
+  "homepage": "https://github.com/pandyapurvi/Devcamp-nodejs#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
