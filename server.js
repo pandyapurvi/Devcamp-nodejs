@@ -11,7 +11,7 @@ dotenv.config({
 
 const app = express();
 
-app.use('/api/v1/bpptcamps', bootcamps);
+app.use('/api/v1/bootcamps', bootcamps);
 
 const PORT = process.env.PORT || 5000
 
