@@ -18,7 +18,7 @@ const BootcampSchema = new mongoose.Schema({
   website: {
     type: String,
     match: [
-      /https?:\/\/(www\.) ? [-a - zA - Z0 - 9@:%._\+~#=]{ 1, 256 } \.[a - zA - Z0 - 9()]{ 1, 6 } \b([-a - zA - Z0 - 9()@: @% _\+.~# ?&//=]*)/,
+      /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/,
       'Please use a valid URL with HTTP or HTTPS'
     ]
   },
@@ -39,16 +39,16 @@ const BootcampSchema = new mongoose.Schema({
   },
   location: {
     //GeoJSON Point
-    type: {
-      type: String,
-      enum: ['Point'],
-      required: true
-    },
-    coordinates: {
-      type: [Number],
-      required: true,
-      index: '2dsphere'
-    },
+    // type: {
+    //   type: String,
+    //   enum: ['Point'],
+    //   required: true
+    // },
+    // coordinates: {
+    //   type: [Number],
+    //   required: true,
+    //   index: '2dsphere'
+    // },
     formattedAddress: String,
     street: String,
     city: String,
