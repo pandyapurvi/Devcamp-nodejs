@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.minimumContrastRatio": 4.5,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.experimentalUseTitleEvent": true
+}
